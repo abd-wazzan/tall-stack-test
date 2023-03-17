@@ -7,8 +7,8 @@ export default defineConfig(({command, mode, ssrBuild}) => {
             server: {
                 host: '0.0.0.0',
                 hmr: {
-                    // host: 'localhost',
-                    host: 'tall-stack.test',
+                    host: 'localhost',
+                    // host: 'tall-stack.test',
                 },
                 watch: {
                     usePolling: true,
@@ -34,8 +34,8 @@ export default defineConfig(({command, mode, ssrBuild}) => {
             server: {
                 host: '0.0.0.0',
                 hmr: {
-                    // host: 'localhost',
-                    host: 'tall-stack.test',
+                    host: 'localhost',
+                    // host: 'tall-stack.test',
                 },
                 watch: {
                     usePolling: true,

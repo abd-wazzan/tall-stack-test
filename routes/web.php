@@ -54,3 +54,8 @@ Route::middleware('auth')->group(function () {
     Route::post('logout', LogoutController::class)
         ->name('logout');
 });
+
+Route::middleware('auth')->group(function () {
+    Route::get('people', \App\Http\Livewire\PeopleTable::class)
+        ->name('people.index');
+});

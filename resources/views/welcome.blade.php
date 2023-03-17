@@ -6,6 +6,13 @@
             @if (Route::has('login'))
                 <div class="space-x-4">
                     @auth
+                    <a
+                            href="{{ route('people.index') }}"
+                            class="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150"
+                    >
+                        People Table
+                    </a>
+
                         <a
                             href="{{ route('logout') }}"
                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
